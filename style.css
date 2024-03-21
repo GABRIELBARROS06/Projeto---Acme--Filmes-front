@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    cursor: pointer;
+}
+.capa{
+  position: absolute;
+  width: 10vw;
+}
