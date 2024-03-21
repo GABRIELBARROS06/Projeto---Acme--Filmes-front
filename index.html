@@ -18,26 +18,43 @@
       </script>
 </head>
 
-<body class="w-full h-full bg-gradient-to-b from-stone-950 50% to-red-950 from-stone-950 20%  flex flex-col z-0 relative overflow-x-hidden">
+<body class="w-screen h-screen bg-gradient-to-b from-stone-950 from-10% via-red-600 via-60% to-stone-950 30%  flex flex-col z-0 relative overflow-x-hidden">
 
   <div class="header flex align-center w-full">
 
-    <div class="barra w-10 h-10 h-11 flex justify-center ml-5 mt-5">
+    <div class="barra w-10 h-10  flex justify-center ml-10 mt-20">
+      <a href="">
       <img src="./icons/Barra.png" alt="" class="icon w-12">
+    </a>
     </div>
 
-    <div class="barra-pesquisa w-96 h-11 bg-gradient-to-b from-gray-300 to-slate-950 flex align-center ml-96 mt-12 rounded-lg">
-      <img src="./icons/lupa.png" alt="" class="lupa w-8 ml-80">
-      <input type="text" class="pesquisa bg-gray-300 rounded-r-lg focus:outline-none ml-5 text-lg font-sans w-3/4">
+    <div class="barra-pesquisa w-96 h-10 bg-gradient-to-b from-white to-slate-950 flex align-center ml-40 mt-20 rounded-lg" style="width: 70vw;">
+      <img src="./icons/lupa.png" alt="" class="lupa w-5 h- ml-60 mt-10" style="position: absolute; left: 67vw; top: 2.7vw;">
+      <input type="text" class="pesquisa text-red-700 font-bold rounded-r-lg focus:outline-none ml-10 text-lg font-sans w-3/4 bg-transparent">
     </div>
+
+    <divc class="logo flex justify-center ml-20 mt-5 w-30 h-40">
+      <img src="./icons/Logo.png" alt="" class="">
+    </div>
+
   </div>
 
-  <h2 class="destaque ml-20 text-white font-semibold text-4xl z-10">Destaque</h2>
-  <div class="container-filmes flex w-80 gap-96 ml-30 mt-5" id="container"></div>
 
-  <h2 class="recomendacoes text-white mt-80 ml-20 mt-12 font-semibold"></h2>
-  <div class="container-filmes flex flex-row-reverse gap-64 ml-44 mt-5 justify-end" id="container2"></div>
+  <div class="filmes text-white font-semibold">
+  <h2 class="destaque ml-96 mb-2 text-white font-semibold text-4xl z-10" style="position: relative; left: 25%;">Destaques</h2>
+  <div class="container-filmes1 flex w-60 gap-96 ml-20 mt-6" id="container"></div>
 
+<a href="#">
+  <div class="letras flex gap-40 # mt">
+  <h2 class="assistidos text-white hover:hover:text-red-600 mt-80 mr-40 ml-40 font-semibold text-4xl z-10">Assistidos</h2>
+  <h2 class="assistidos text-white hover:hover:text-red-600 mt-80 mr-60  font-semibold text-4xl z-10">Favoritos</h2>
+  <h2 class="assistidos text-white hover:hover:text-red-600 mt-80 mr-60 font-semibold text-4xl z-10">Popular</h2>
+  <h2 class="assistidos text-white hover:hover:text-red-600 mt-80 mr-40 font-semibold text-4xl z-10">Generos</h2>
+  </div>
+</a>
+  <div class="">
+  <div class="container-filmes2 flex flex-row-reverse gap-60 ml-6 mt-10 justify-end" id="container2"></div>
+</div>
   
 
 

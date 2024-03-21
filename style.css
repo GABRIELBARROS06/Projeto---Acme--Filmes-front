@@ -7,7 +7,9 @@
 .card{
     cursor: pointer;
 }
+
 .capa{
   position: absolute;
-  width: 10vw;
+  max-width: 10vw;
 }
+
