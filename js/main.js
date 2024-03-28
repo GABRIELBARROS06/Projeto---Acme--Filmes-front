@@ -6,6 +6,10 @@ function criarCards(filme){
     const card = document.createElement('div')
     card.classList.add('card')
 
+    const player = document.createElement('img')
+    player.src = '../icons/Player.png'
+    player.classList.add('play')
+
     const img = document.createElement('img')
     img.src = filme.foto_capa
     img.classList.add('capa')
@@ -22,15 +26,40 @@ async function mostrarCards(){
 
     filmes.forEach(filme => {
         const card = criarCards(filme)
-        container.appendChild(card)
-        console.log(card)        
+        
+        card.onclick = function(){
+            const dadosFilme = {}
+            dadosFilme.nome = filme.nome
+            dadosFilme.sinopse = filme.sinopse
+            dadosFilme.duracao = filme.duracao
+            dadosFilme.data_lancamento = filme.data_lancamento
+            dadosFilme.foto_capa = filme.foto_capa
+            dadosFilme.preco_unitario = filme.valor_unitario       
+            passarDadosFilme(dadosFilme)
+        }    
+        container.appendChild(card)    
     });
 
     filmes.forEach(filme => {
         const card = criarCards(filme)
-        container2.appendChild(card)
-        console.log(card)        
+        
+        card.onclick = function(){
+            const dadosFilme = {}
+            dadosFilme.nome = filme.nome
+            dadosFilme.sinopse = filme.sinopse
+            dadosFilme.duracao = filme.duracao
+            dadosFilme.data_lancamento = filme.data_lancamento
+            dadosFilme.foto_capa = filme.foto_capa
+            dadosFilme.preco_unitario = filme.valor_unitario       
+            passarDadosFilme(dadosFilme)
+        }    
+        container2.appendChild(card)       
     });
+}
+
+function passarDadosFilme(dadosFilme){
+   localStorage.setItem('dadosFilme', JSON.stringify(dadosFilme))
+   window.location.href = "../home.html"
 }
 
 mostrarCards();

@@ -6,10 +6,76 @@
 
 .card{
     cursor: pointer;
+    
 }
 
 .capa{
   position: absolute;
   max-width: 10vw;
+  border-radius: 10px;
+ 
+
+}
+.capa:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+.play{
+width: 10vw;
+}
+.background-player{
+
+  position: absolute;
+  width: 65vw;
+  height: 65vh;
+  left: 17%;
+  top: 5%;
+  border-radius: 20px;
+  background-size: cover;
+  
+
 }
 
+.titulo-filme{
+  color: white;
+  font-size: 36px;
+  max-width: 500px;
+  text-align: center;
+  font-weight: bold;
+  justify-content: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 30px;
+  margin-left: 45vw;
+}
+.icone{
+  width: 6vw;
+  cursor: pointer;
+}
+.sinopse{
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  text-align: center;
+  margin-left: 50vw;
+  margin-bottom: 8vh;
+  position: relative;
+  right: 25%;
+  font-size: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 12;
+  -webkit-box-orient: vertical; 
+}
+.itens{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16vw;
+  margin-top: -10vh;
+}
+
+.texto-itens{
+  font-size: 30px;
+  color: white;
+  margin-top: 10px;
+}
